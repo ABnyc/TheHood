@@ -13,6 +13,10 @@
 		2BE4C38A1D593ADF00A14F02 /* TheHood.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2BE4C3881D593ADF00A14F02 /* TheHood.xcdatamodeld */; };
 		2BE4C38C1D593ADF00A14F02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BE4C38B1D593ADF00A14F02 /* Assets.xcassets */; };
 		2BE4C38F1D593ADF00A14F02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE4C38D1D593ADF00A14F02 /* LaunchScreen.storyboard */; };
+		2BE4C39A1D593B7900A14F02 /* posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE4C3991D593B7900A14F02 /* posts.swift */; };
+		2BE4C39E1D594BF100A14F02 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE4C39D1D594BF100A14F02 /* PostCell.swift */; };
+		2BE4C3A01D67701600A14F02 /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE4C39F1D67701600A14F02 /* AddPostVC.swift */; };
+		2BE4C3A31D678A9F00A14F02 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE4C3A21D678A9F00A14F02 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		2BE4C38B1D593ADF00A14F02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BE4C38E1D593ADF00A14F02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BE4C3901D593ADF00A14F02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BE4C3991D593B7900A14F02 /* posts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = posts.swift; sourceTree = "<group>"; };
+		2BE4C39D1D594BF100A14F02 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostCell.swift; path = ../PostCell.swift; sourceTree = "<group>"; };
+		2BE4C39F1D67701600A14F02 /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
+		2BE4C3A21D678A9F00A14F02 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +64,11 @@
 		2BE4C3801D593ADF00A14F02 /* TheHood */ = {
 			isa = PBXGroup;
 			children = (
+				2BE4C3A11D678A8B00A14F02 /* Services */,
+				2BE4C3981D593B5100A14F02 /* Controller */,
+				2BE4C3971D593B4B00A14F02 /* View */,
+				2BE4C3961D593B4100A14F02 /* Model */,
 				2BE4C3811D593ADF00A14F02 /* AppDelegate.swift */,
-				2BE4C3831D593ADF00A14F02 /* ViewController.swift */,
 				2BE4C3851D593ADF00A14F02 /* Main.storyboard */,
 				2BE4C38B1D593ADF00A14F02 /* Assets.xcassets */,
 				2BE4C38D1D593ADF00A14F02 /* LaunchScreen.storyboard */,
@@ -65,6 +76,39 @@
 				2BE4C3881D593ADF00A14F02 /* TheHood.xcdatamodeld */,
 			);
 			path = TheHood;
+			sourceTree = "<group>";
+		};
+		2BE4C3961D593B4100A14F02 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2BE4C3991D593B7900A14F02 /* posts.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2BE4C3971D593B4B00A14F02 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2BE4C39D1D594BF100A14F02 /* PostCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2BE4C3981D593B5100A14F02 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2BE4C3831D593ADF00A14F02 /* ViewController.swift */,
+				2BE4C39F1D67701600A14F02 /* AddPostVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		2BE4C3A11D678A8B00A14F02 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2BE4C3A21D678A9F00A14F02 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +183,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BE4C3841D593ADF00A14F02 /* ViewController.swift in Sources */,
+				2BE4C3A31D678A9F00A14F02 /* DataService.swift in Sources */,
 				2BE4C3821D593ADF00A14F02 /* AppDelegate.swift in Sources */,
 				2BE4C38A1D593ADF00A14F02 /* TheHood.xcdatamodeld in Sources */,
+				2BE4C39A1D593B7900A14F02 /* posts.swift in Sources */,
+				2BE4C3A01D67701600A14F02 /* AddPostVC.swift in Sources */,
+				2BE4C39E1D594BF100A14F02 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
